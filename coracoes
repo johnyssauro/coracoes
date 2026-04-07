@@ -1,0 +1,24 @@
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+frase = "ENIGMA"
+data = [2,4,1,0,2,0,2,5]
+
+nova_frase = ""
+
+i = 0
+
+
+for char in frase:
+    
+    if char != ' ':
+        
+        nova_frase = nova_frase + chr(ord(char) + data[i % len(data)])
+
+        i = i + 1
+        
+    else:
+        
+        nova_frase = nova_frase + ' '
+    
+
+print(nova_frase)
